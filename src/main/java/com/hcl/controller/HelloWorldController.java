@@ -10,7 +10,7 @@ public class HelloWorldController {
 	@RequestMapping("/helloworld")
 	public ModelAndView hello() {
  
-		String helloWorldMessage = "Hello world from devsecops!";
+		String helloWorldMessage = "Hello world 2nd time from devsecops!";
 		return new ModelAndView("hello", "message", helloWorldMessage);
 	}
 }
