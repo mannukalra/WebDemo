@@ -3,7 +3,7 @@ node{
 	git 'https://github.com/mannukalra/webdemo'
   }
   stage ('Build') {
-	withMaven(jdk: 'jdk8', maven: 'MVN_Local') {
+	withMaven(jdk: 'JDK_Local', maven: 'MVN_Local') {
       bat 'mvn clean package'
     } 
   }
