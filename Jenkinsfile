@@ -11,6 +11,7 @@ node{
   	bat 'copy /Y target\\webdemo.war C:\\Common\\apache-tomcat-8.5.32_Jenkins\\webapps'
   }
   stage ("running appscan on cloud"){
-      appscan application: '955fa556-8ef7-4279-8bdd-9114f5c58069', credentials: 'Ananth_ISOC_Prod', name: 'WebDemoPL_0809Ananth_ISOC_Prod', scanner: static_analyzer('C:\\Users\\kalra_m\\eclipse-workspace\\webdemo'), type: 'Static Analyzer'
+      appscan application: 'cbbc6349-3293-46f0-94ec-2df22fb254ae', credentials: 'Ananth_ISOC_Prod', name: 'WebDemoPL_0809Ananth_ISOC_Prod', scanner: static_analyzer('C:\\Users\\kalra_m\\eclipse-workspace\\webdemo'), type: 'Static Analyzer'
   }
 }
++
